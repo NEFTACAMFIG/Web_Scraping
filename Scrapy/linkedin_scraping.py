@@ -58,9 +58,6 @@ class LinkedInPeopleProfile(scrapy.Spider):
 
             item['experience'].append(experience)
 
-
-
-
         # Education Section
         item['education'] = []
         education_blocks = response.css('li.education__list-item')
